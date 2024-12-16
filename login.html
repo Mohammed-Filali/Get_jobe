@@ -1,0 +1,385 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Simo</title>
+    <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+    <link href="assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.snow.css" rel="stylesheet">
+    <link href="assets/vendor/quill/quill.bubble.css" rel="stylesheet">
+    <link href="assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+    <!--header -->
+    <header>
+
+        <nav
+            class="navbar navbar-expand-lg navbar-light bg-light fixed-top"
+        >
+            <div class="container">
+                <a class="navbar-brand" href="#">GeT Job</a>
+                <button
+                    class="navbar-toggler hidden-lg-up"
+                    type="button"
+                    data-bs-toggle="collapse"
+                    data-bs-target="#collapsibleNavId"
+                    aria-controls="collapsibleNavId"
+                    aria-expanded="false"
+                    aria-label="Toggle navigation"
+                ><i class="bi bi-list toggle-sidebar-btn"></i> </button>
+                <div class="collapse navbar-collapse" id="collapsibleNavId">
+                    <ul class="navbar-nav me-auto mt-2 mt-lg-0">
+                        <li class="nav-item">
+                            <a class="nav-link" href="Home.html" id="ahome" aria-current="page">Home<span class="visually-hidden">(current)</span></a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html" id="aabout">About</a>
+                        </li>
+                    </ul>
+                    <form class="d-flex my-2 my-lg-0">
+                        <input
+                            class="form-control me-sm-2"
+                            type="text"
+                            placeholder="Search"
+                        />
+                        <button
+                            class="btn btn-outline-success my-2 my-sm-0 me-2"
+                            type="submit"
+                        >
+                            Search
+                        </button>
+                    </form>
+                    <a href="login.html" name="" id="" class="btn btn-outline-dark" role="button" >LOGIN</a>
+                </div>
+            </div>
+        </nav>
+        
+    </header>
+    <!--Fin Header-->
+
+
+    <div class="video-background">
+        <video autoplay muted loop id="background-video">
+            <source src="home6.mp4" type="video/mp4">
+        </video>
+    </div>
+
+    <div class="container content">
+        <div class="mb-3">
+            <h1>Get Job</h1>
+        </div>
+        <div class="mb-5 " >
+            <h3>welcomme ! to get jobe the best way for find or post a jobe</h3>
+        </div>
+        <div class="mb-3">
+            <button type="button" class="btn btn-outline-dark btn-lg "  data-bs-toggle="modal"data-bs-target="#modalId">Start </button>
+        </div>
+    </div>
+
+
+    
+
+    
+    <!-- Modal Body -->
+    <div
+        class="modal fade"
+        id="modalId"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+            role="document" 
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Title
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body row">
+                    <div class="col-md-6">
+                       <div class="card">
+                        <div class="card-body">
+                            <h4 class="card-title">Start</h4>
+                            <h6 class="card-subtitle text-muted">find jobe</h6>
+                        </div>
+                        <img src="bg.avif" alt="" />
+                        <div class="card-body">
+                            <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#loginModal" >Go</button>
+                        </div>
+                       </div> 
+                    </div>
+                    
+                    <div class="col-md-6">
+                        <div class="card">
+                            <div class="card-body">
+                                <h4 class="card-title">Start</h4>
+                                <h6 class="card-subtitle text-muted">find jobe</h6>
+                            </div>
+                            <img src="bg.avif" alt="" />
+                            <div class="card-body">
+                                <button type="button" class="btn btn-outline-primary" data-bs-toggle="modal" data-bs-target="#jobID" >Go</button>
+                            </div>
+                           </div> 
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Modal Body -->
+
+    <div
+        class="modal fade"
+        id="jobID"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        2 TAble 
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="date"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Date</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Phone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Company Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Confirmation</label>
+                        </div>
+                    </form>
+
+
+                </div>
+                <div class="modal-footer">        
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalgo">Create</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional: Place to the bottom of scripts -->
+    <script>
+        const myModal = new bootstrap.Modal(
+            document.getElementById("modalId"),
+            options,
+        );
+    </script>
+    
+    
+    <!--End Modal -->
+    
+    <!-- Modal Body -->
+    <div
+        class="modal fade"
+        id="loginModal"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-md"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalTitleId">
+                        Get Job
+                    </h5>
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+
+                    <form action="">
+                        <div class="form-floating mb-3">
+                            <input type="text"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="text"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Last Name</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="date"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Date</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="tel"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Phone</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="email"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Email</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Password</label>
+                        </div>
+                        <div class="form-floating mb-3">
+                            <input type="password"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                            <label for="formId1">Confirmation</label>
+                        </div>
+                    </form>
+
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary" data-bs-toggle="modal" data-bs-target="#modalgo">Create</button>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+    
+
+    
+    <!-- Modal Body -->
+    <div
+        class="modal fade"
+        id="modalgo"
+        tabindex="-1"
+        data-bs-backdrop="static"
+        data-bs-keyboard="false"
+        
+        role="dialog"
+        aria-labelledby="modalTitleId"
+        aria-hidden="true"
+    >
+        <div
+            class="modal-dialog modal-dialog-scrollable modal-dialog-centered modal-lg"
+            role="document"
+        >
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button
+                        type="button"
+                        class="btn-close"
+                        data-bs-dismiss="modal"
+                        aria-label="Close"
+                    ></button>
+                </div>
+                <div class="modal-body">
+                    <div class="row">
+                        <div class="col-sm-6">
+                            <div class="card bg-dark text-white">
+                              <img class="card-img" src="login.jpg" alt="">
+                              <div class="card-img-overlay">
+                                <h4 class="card-title">Get Job</h4>
+                                <p class="card-text">Welcome Back </p>
+                              </div>
+                            </div>
+                        </div>
+                        <div class="col-sm-6">
+                            <form action="">
+                                <div class="form-floating mb-3">
+                                    <input type="text"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                                    <label for="formId1">Email</label>
+                                </div>
+                                <div class="form-floating mb-3">
+                                    <input type="password"class="form-control"name="formId1"id="formId1"placeholder=""/>
+                                    <label for="formId1">Password</label>
+                                </div>
+                                <div class="form-floating mb-3">                                  
+                                    <a name="" id=""class="btn btn-outline-primary" href="Home.html" role="button">LOGIN </a>                                    
+                                </div>
+                                
+                            </form>
+                        </div>
+                    </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+    
+   
+    
+    
+    
+    
+        
+
+
+
+
+
+    <script src="scripte.js"></script>
+    <script src="assets/vendor/apexcharts/apexcharts.min.js"></script>
+    <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+    <script src="assets/vendor/chart.js/chart.umd.js"></script>
+    <script src="assets/vendor/echarts/echarts.min.js"></script>
+    <script src="assets/vendor/quill/quill.min.js"></script>
+    <script src="assets/vendor/simple-datatables/simple-datatables.js"></script>
+    <script src="assets/vendor/tinymce/tinymce.min.js"></script>
+</body>
+</html>
